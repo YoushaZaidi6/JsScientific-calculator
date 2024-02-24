@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <section class="d-flex justify-content-center ">
+        <form name="Calculator" action="">
+            <table>
+                <tr>
+                    <td  colspan="4"><input class="text-end" type="text" name="result" id="calculatorInput" oninput="checkInput()" placeholder="0" ></td>
+                </tr>
+                <tr>
+                    <td><button class="rounded-2" type="button" value="sin" onclick="sin()">sin</button></td>
+                    <td><button class="rounded-2" type="button" value="cos" onclick="cos()">cos</button></td>
+                    <td><button class="rounded-2" type="button" value="tan" onclick="tan()">tan</button></td>
+                    <td colspan="2"><button type="button" onclick="remv()" class="clear rounded-2 ">C</button></td>
+                </tr>
+                <tr>
+                    <td><button class="rounded-2" type="button" value="x^2" onclick="square()">x<sup>2</sup></button></td>
+                    <td><button class="rounded-2" type="button" value="x^3" onclick="cube()">x<sup>3</sup></button></td>
+                    <td><button class="rounded-2" type="button" value="sqrt2" onclick="sqrt2()">&radic;</button></td>
+                    <td><button class="rounded-2" type="button" value="sqrt3" onclick="sqrt3()">&#8731</button></td>
+                </tr>
+                <tr>
+                    <td><button class="rounded-2" type="button" value="1" onclick="number(value)">1</button></td>
+                    <td><button class="rounded-2" type="button" value="2" onclick="number(value)">2</button></td>
+                    <td><button class="rounded-2" type="button" value="3" onclick="number(value)">3</button></td>
+                    <td><button class="rounded-2" type="button" value="BACKSPC" onclick="BACKSPC()"> < </button></td>
+                </tr>
+                <tr>
+                    <td><button class="rounded-2" type="button" value="4" onclick="number(value)">4</button></td>
+                    <td><button class="rounded-2" type="button" value="5" onclick="number(value)">5</button></td>
+                    <td><button class="rounded-2" type="button" value="6" onclick="number(value)">6</button></td>
+                    <td><button class="rounded-2" type="button" value="-" onclick="number(value)"> - </button></td>
+                </tr>
+                <tr>
+                    <td><button class="rounded-2" class="rounded-2" type="button" value="7" onclick="number(value)">7</button></td>
+                    <td><button class="rounded-2" class="rounded-2" type="button" value="8" onclick="number(value)">8</button></td>
+                    <td><button class="rounded-2" class="rounded-2" type="button" value="9" onclick="number(value)">9</button></td>
+                    <td><button class="rounded-2" class="rounded-2" type="button" value="/" onclick="number(value)"> / </button></td>
+                </tr>
+                <tr>
+                    <td><button class="rounded-2" type="button" value="." onclick="number(value)">.</button></td>
+                    <td><button class="rounded-2" type="button" value="0" onclick="number(value)">0</button></td>
+                    <td><button class="rounded-2" type="button" value="*" onclick="number(value)">*</button></td>
+                    <td><button class="rounded-2" type="button" value="%" onclick="number(value)"> % </button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="button" value="=" onclick="equal()" class="equal rounded-2 mb-2">=</button></td>
+                    <td><button class="rounded-2 mb-2 " type="button" value="+" onclick="number(value)">+</button></td>
+                </tr>
+    
+            </table>
+        </form>
+    </section>
+
+
+
+
+
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
