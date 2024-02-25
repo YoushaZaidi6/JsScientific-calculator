@@ -33,14 +33,8 @@ function remv(){
 function equal(){
     document.Calculator.result.value = eval(document.Calculator.result.value);
 }
-function checkInput() {
-    var inputElement = document.getElementById("calculatorInput");
-    var inputValue = inputElement.value.trim();
-    if (inputValue === "") {
-        inputElement.disabled = true;
-    } 
-    else {
-        inputElement.disabled = false;
-    }
+if (inputValue.trim() === "checkInput()") {
+    inputElement.disabled = true;
+} else {
+    inputElement.disabled = false;
 }
-
